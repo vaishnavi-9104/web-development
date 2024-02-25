@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+  </head>
+  <body>
+    <h1>form to be filled</h1>
+    <form action="https://www.google.com">
+      <div>
+        <label for="name">Username:</label>
+        <input
+          type="text"
+          id="name"
+          name="username"
+          placeholder="Enter ur username" required
+        />
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" pattern="A-Z" >
+      </div>
+      <h3>gender</h3>
+      <div>
+        <input type="radio" id="male" name="gender" value="male"  />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"  />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+        <label for="subscribe">Subscribe</label>
+      </div>
+      <div>
+        <label for="ta">Your Commentss</label><br />
+        <textarea name="ta" id="ta" cols="30" rows="4" autofocus>
+Enter ur comments</textarea>
+      </div>
+      <div>
+        <select name="rank">
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>
