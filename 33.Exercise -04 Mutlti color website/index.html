@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mutlicolor</title>
+    <style>
+        :root{
+            --c:rgb(201, 103, 103);
+            --c1:rgb(114, 114, 241);
+            --c2:pink;
+            --c3:rgb(144, 227, 230);
+        }
+        body{
+            background-color:rgba(172, 55, 196, 0.322);
+            padding:0;
+            margin:0;
+        }
+        nav{
+            padding:0px;
+            margin: 0;
+            background-color: rgba(189, 9, 189, 0.678);
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:10px;
+            margin:0px;
+            font-family:sans-serif;
+            font-weight:bold;
+            color:rgba(53, 2, 2, 0.822);
+
+        }
+
+        a{
+            text-decoration:none;
+            color:black;
+        }
+        ul{ 
+            padding:0px;
+            margin:0px;
+            display:flex;
+        }
+        ul li:first-child{
+            background-color:var(--c,white);
+        }
+        ul li:nth-child(2){
+            background-color:var(--c1,white);
+        }
+        ul li:nth-child(3){
+            background-color:var(--c2,white);
+        }
+        ul li:nth-child(4){
+            background-color:var(--c3,white);
+        }
+        .text
+        {
+           padding:20px;
+           margin:0px;
+           text-transform: capitalize; 
+           text-shadow:rgb(231, 21, 21);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="/">Home</li></a>
+                <li><a href="/">About</li></a>
+                <li><a href="/">Contact Us</li></a>
+                <li><a href="/">Service</li></a>
+            </ul>
+        </nav>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum ex deserunt nam sed dignissimos tenetur cum non explicabo laboriosam, earum doloribus delectus laborum nihil corrupti quod recusandae eius quisquam id rerum pariatur? Est, distinctio. Harum ea aut libero expedita aliquam quidem quasi dolores et ratione maiores. Veniam vero cumque quod maiores. Velit itaque enim assumenda totam nulla doloremque maiores esse pariatur aperiam ipsum quia eaque rem in odio culpa possimus, blanditiis repudiandae iure. Saepe quisquam, adipisci laboriosam vero atque qui iure optio quis illum necessitatibus, error vitae rerum.</div>
+    </div>
+    
+</body>
+</html>
